@@ -1,0 +1,44 @@
+{
+  "data": {
+    "train_path": "./dataset/train",
+    "val_path": "./dataset/val",
+    "image_height": 64,
+    "image_width": 256,
+    "max_sequence_length": 10,
+    "vocab_size": 63,
+    "charset": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+  },
+  "model": {
+    "stn_channels": [64, 128, 256, 512],
+    "stn_kernels": [7, 5, 3, 3],
+    "cnn_channels": [64, 128, 256, 512],
+    "lstm_hidden": [256, 256, 128],
+    "lstm_layers": [2, 2, 1],
+    "attention_heads": 8,
+    "attention_dim": 256,
+    "dropout": 0.3
+  },
+  "training": {
+    "batch_size": 16,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "epochs": 200,
+    "warmup_steps": 1000,
+    "gradient_clip": 1.0,
+    "mixed_precision": true,
+    "gradient_checkpointing": true
+  },
+  "augmentation": {
+    "rotation": 12,
+    "perspective": 0.2,
+    "gaussian_noise": 0.05,
+    "blur_kernel": 3,
+    "brightness_contrast": 0.25
+  },
+  "paths": {
+    "model_save": "./models/best_model.pt",
+    "onnx_save": "./models/model.onnx",
+    "log_dir": "./logs"
+  }
+}
