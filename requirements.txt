@@ -1,0 +1,13 @@
+torch
+numpy
+Pillow
+albumentations
+tqdm
+opencv-python-headless
+editdistance
+scikit-learn
+matplotlib
+seaborn
+pandas
+onnx
+onnxruntime
