@@ -1,4 +1,4 @@
-# Advanced CAPTCHA Recognition with Deep Learning
+# CAPTCHA Recognition with CRNN and CBA Mechanism.
 
 This project provides a complete, end to end pipeline for training and deploying a Deep Learning model to solve complex CAPTCHA images. The solution uses a hybrid CRNN architecture with attention mechanisms, achieves high accuracy, and demonstrates a full lifecycle from data preparation to deployment in a C++ environment via ONNX.
 
@@ -201,4 +201,5 @@ For high-performance environments, deploy the model in C++.
 └── utils.py             #Utility functions (metrics, decoders, logging)
 
 ```
+
 
