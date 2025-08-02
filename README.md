@@ -181,23 +181,24 @@ For high-performance environments, deploy the model in C++.
 
 ```
 .
-├── checkpoints/         # Saved model checkpoints
-├── dataset/             # Processed dataset (train/val/test splits)
-├── logs/                # Training logs (training.log)
-├── models/              # Best trained model (best_model.pt)
-├── visualizations/      # Output plots from analysis scripts
-├── CMakeLists.txt       # Build script for C++ inference
-├── config.json          # All project configurations and hyperparameters
-├── data.py              # PyTorch Dataset and DataLoader classes
-├── dataset_preparer.py  # Script to split and analyze the raw dataset
-├── evaluate.py          # Script to evaluate model performance on the test set
-├── export_onnx.py       # Script to convert PyTorch model to ONNX
-├── inference.cpp        # C++ inference source code using ONNX Runtime
-├── inference.py         # Python inference script
-├── model.py             # The CRNN model architecture definition
-├── model_metrics_plotter.py # Script to visualize metrics from training logs
-├── requirements.txt     # Python dependencies
-├── train.py             # Main training script
-└── utils.py             # Utility functions (metrics, decoders, logging)
+├── checkpoints/         #Saved model checkpoints
+├── dataset/             #Processed dataset (train/val/test splits)
+├── logs/                #Training logs (training.log)
+├── models/              #Best trained model (best_model.pt)
+├── visualizations/      #Output plots from analysis scripts
+├── CMakeLists.txt       #Build script for C++ inference
+├── config.json          #All project configurations and hyperparameters
+├── data.py              #PyTorch Dataset and DataLoader classes
+├── dataset_preparer.py  #Script to split and analyze the raw dataset
+├── evaluate.py          #Script to evaluate model performance on the test set
+├── export_onnx.py       #Script to convert PyTorch model to ONNX
+├── inference.cpp        #C++ inference source code using ONNX Runtime
+├── inference.py         #Python inference script
+├── model.py             #The CRNN model architecture definition
+├── model_metrics_plotter.py #Script to visualize metrics from training logs
+├── requirements.txt     #Python dependencies
+├── train.py             #Main training script
+└── utils.py             #Utility functions (metrics, decoders, logging)
 
 ```
+
