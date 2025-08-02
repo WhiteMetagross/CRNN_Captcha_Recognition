@@ -73,8 +73,8 @@ This section provides a complete guide to setting up the environment and running
 First, clone the repository and navigate into the project directory.
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/WhiteMetagross/ProjectAA
+cd ProjectAA
 ```
 
 Next, create a Python virtual environment and install the required dependencies from the `requirements.txt` file.
@@ -199,4 +199,5 @@ For high-performance environments, deploy the model in C++.
 ├── requirements.txt     # Python dependencies
 ├── train.py             # Main training script
 └── utils.py             # Utility functions (metrics, decoders, logging)
+
 ```
